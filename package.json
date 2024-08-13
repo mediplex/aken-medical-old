@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "dev": "cd corporate-website && PORT=8080 npm run dev "
+  }
+}

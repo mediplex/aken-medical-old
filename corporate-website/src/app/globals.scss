@@ -1,0 +1,102 @@
+// add scss loop. increase transition by 10%
+
+.has-transition {
+  transition: all 0.5s;
+}
+
+.has-transition:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+
+
+img.is-grayscale-and-hover-color {
+  filter: grayscale(100);
+
+}
+
+img.is-grayscale-and-hover-color:hover {
+  filter: grayscale(0);
+
+
+}
+
+.navbar.is-rounded {
+  border-radius: var(--bulma-radius-rounded);
+}
+
+.navbar .navbar-brand .navbar-item.is-rounded {
+  border-radius: var(--bulma-radius-rounded);
+}
+
+.navbar .navbar-item.is-rounded {
+  border-radius: var(--bulma-radius-rounded);
+}
+
+.box.is-rounded {
+  border-radius: var(--bulma-radius-rounded);
+}
+
+.has-ring-warning {
+  outline: solid;
+  outline-offset: .2rem;
+  outline-color: var(--bulma-warning)
+}
+
+.has-ring-dark {
+  outline: solid;
+  outline-offset: .2rem;
+  outline-color: var(--bulma-dark)
+}
+
+
+
+
+
+.list-circles {
+  counter-reset: li;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.list-circles li {
+  list-style: none;
+  margin: 1em 0;
+  padding-left: 2.25em;
+  position: relative;
+}
+
+.list-circles li::after {
+  counter-increment: li;
+  content: counter(li);
+  position: absolute;
+  // font-size: 0.9em;
+  left: 0;
+  // font-weight: 600;
+  top: -0.25em;
+  width: 1.75em;
+  height: 1.75em;
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  // ring
+  outline: solid;
+  outline-offset: .1rem;
+  outline-color: var(--bulma-dark)
+}
+
+.list-circles-warning li::after {
+  background-color: var(--bulma-warning);
+  color: var(--bulma-dark);
+}
+
+.list-circles-dark li::after {
+  background-color: var(--bulma-dark);
+  color: var(--bulma-light);
+}
