@@ -38,11 +38,11 @@ export const Hero = () => {
               <div className="box">
 
                 <div className="columns is-centered">
-                  <div className="column is-8-desktop is-10-tablet">
-                    <h1 className="title has-text-centered has-text-pretty is-size-3-desktop is-size-3-tablet is-4   has-text-weight-bold" style={{ lineHeight: 1.3 }}>
+                  <div className="column is-10-desktop is-10-tablet">
+                    <h1 className="title has-text-dark has-text-centered has-text-pretty is-size-3-desktop is-size-3-tablet is-4   has-text-weight-bold" style={{ lineHeight: 1.3 }}>
 
 
-                      <div className="tag mb-4 ">Revolution in Cancer Treatment</div>
+                      <div className="tag is-dark mb-4 ">Revolution in Cancer Treatment</div>
                       <br />A Nanoparticle-based <span className="has-background-warning">Radiopharmaceutical</span>
 
                       {/* Revolution in Cancer Treatment <span className="has-background-dark has-text-light">Radiopharmaceutical</span> with Nanoparticle Technology */}
@@ -51,7 +51,7 @@ export const Hero = () => {
                 </div>
 
                 <div className="columns is-centered">
-                  <div className="column is-6-desktop">
+                  <div className="column is-10-desktop">
                     <p className="has-text-pretty has-text-centered has-text-weight-normal">We develop a nanoparticle platform that embeds radioactive materials to deliver targeted radiation to cancer cells.</p>
                   </div>
                 </div>

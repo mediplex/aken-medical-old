@@ -28,7 +28,7 @@ const partners = [
 
 export const Partners = () => {
     return (
-        <div className="section has-background-light">
+        <div className="section  has-background-white">
             <h2 className="title has-text-centered">Our Partners</h2>
             <div className="columns is-mobile is-multiline is-centered">
                 {
