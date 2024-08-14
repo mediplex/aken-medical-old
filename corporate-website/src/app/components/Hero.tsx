@@ -1,5 +1,12 @@
 import { Navbar, Partners } from "@/components";
+import { Londrina_Solid } from "next/font/google";
 
+const benefits = [
+  "Embedding of a variety of radioactive materials",
+  "Compatibility with existing vectors",
+  "Enhanced targetting a multi-vector approach",
+  "Seamless theranostics"
+]
 
 export const Hero = () => {
   return (
@@ -33,13 +40,22 @@ export const Hero = () => {
           </div>
 
           <div className="columns is-centered ">
-            <div className="column is-narrow">
-              <ol className="list-circles list-circles-dark is-upper-roman">
-                <li>Embedding of a variety of radioactive materials</li>
-                <li>Compatibility with existing vectors</li>
-                <li>Enhanced targetting a multi-vector approach</li>
-                <li>Seamless theranostics</li>
-              </ol>
+            <div className="column is-4">
+
+              {
+                benefits.map((b, i) => (
+
+                  <div key={i} className="columns is-mobile is-centered is-vcentered is-2">
+                    <div className="column is-narrow ">
+                      <div style={{ height: 48, width: 48, borderWidth: 1, border: "solid", padding: 2, borderRadius: 999, display: 'flex', alignItems: "center", justifyContent: 'center' }}>{i + 1}</div>
+                    </div>
+                    <div className="column">
+                      <p key={i}>{b}</p>
+                    </div>
+                  </div>
+                ))
+              }
+
             </div>
           </div>
 
@@ -54,7 +70,7 @@ export const Hero = () => {
 
       <div className="hero-foot">
 
-       <Partners/>
+        <Partners />
       </div>
     </header>
   );
