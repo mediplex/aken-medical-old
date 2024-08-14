@@ -33,13 +33,13 @@ export const Partners = () => {
                 {
                     partners.map((p, i) => (
                         <div key={i} className="column is-narrow is-gapless">
-                            <figure className="image is-128x128 flex is-justify-content-center is-align-content-center">
                                 <Image
                                     className='is-grayscale-and-hover-color has-transition'
                                     src={p.imgSrc}
                                     alt={p.alt}
+                                    height={72}
+                                    width={128}
                                 />
-                            </figure>
                         </div>
                     ))
                 }

@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
-// import { Roboto } from "next/font/google";
+import { Roboto } from "next/font/google";
 
-import "@/bulma-css-min"
+// import "@/bulma-css-min"
 
 
 import "../app/globals.scss";
 
 
-// const roboto = Roboto({
-//   weight: '400',
-//   subsets: ['latin'],
-//   display: 'swap',
-// })
+const roboto = Roboto({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",

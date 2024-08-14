@@ -2,7 +2,7 @@
 import { Hero, Team, Investment, Market, Roadmap, Validation, Footer } from "@/components";
 
 
-export default () => {
+const Page = () => {
 
   return (
 
@@ -20,4 +20,5 @@ export default () => {
 
 };
 
+export default Page
 

@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export const Team = () => {
   const team = [
     { fullName: "Laila QUERE", title: "CEO", photo: "https://placehold.co/300x300/orange/white?text=LQ", summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.", linkedIn: "#", twitter: "#" },
@@ -20,10 +22,12 @@ export const Team = () => {
             <div className="column is-3" key={i}>
               <div className="box has-text-centered">
                 <figure className="image is-128x128 mx-auto mb-4 ">
-                  <img
+                  <Image
                     className="is-rounded"
                     src={t.photo}
-                    alt={"Phote of " + t.fullName} />
+                    alt={"Phote of " + t.fullName}
+                    width={128}
+                    height={128} />
                 </figure>
 
                 <p className="title is-4">{t.fullName}</p>

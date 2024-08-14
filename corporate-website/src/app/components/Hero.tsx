@@ -4,7 +4,7 @@ import { Navbar, Partners } from "@/components";
 export const Hero = () => {
   return (
     // style={{ backgroundImage: `radial-gradient(circle, var(--bulma-white) 00%, var(--bulma-warning) 100%` }}
-    <header className="hero is-fullheight">
+    <header data-theme="dark" className="hero is-dark is-fullheight" >
       <div className="hero-head">
         <Navbar />
       </div>
@@ -24,6 +24,14 @@ export const Hero = () => {
             </div>
           </div>
 
+
+          <div className="columns is-centered my-6">
+            <div className="column is-4">
+              <div className="button has-text-weight-bold is-primary has-ring-primary is-rounded is-fullwidth py-5 ">Learn more!</div>
+              <a href="#" className="button is-ghost is-rounded has-text-centered is-fullwidth">Click on learn more to learn more</a>
+            </div>
+          </div>
+
           <div className="columns is-centered ">
             <div className="column is-narrow">
               <ol className="list-circles list-circles-dark is-upper-roman">
@@ -36,12 +44,9 @@ export const Hero = () => {
           </div>
 
 
-          <div className="columns is-centered my-6">
-            <div className="column is-4">
-              <div className="button has-transition has-text-weight-bold is-dark has-ring-dark is-rounded is-fullwidth py-5 ">Learn more!</div>
-              <a href="#" className="button is-text has-text-link is-rounded has-text-centered is-fullwidth">Click on learn more to learn more 😂</a>
-            </div>
-          </div>
+
+
+
         </div>
 
 
