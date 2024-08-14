@@ -1,3 +1,103 @@
+// Set your brand colors
+// $purple: #8a4d76;
+// $pink: #fa7c91;
+// $brown: #757763;
+// $beige-light: #d0d1cd;
+// $beige-lighter: #eff0eb;
+
+// Override global Sass variables from the /utilities folder
+// @use "bulma/sass/utilities" with (
+//   $family-primary: '"Nunito", sans-serif',
+//   $grey-dark: $brown,
+//   $grey-light: $beige-light,
+//   $primary: $purple,
+//   $link: $pink,
+//   $control-border-width: 2px
+// );
+
+
+// Import the components you need
+@forward "bulma/sass/base";
+
+// Component
+@forward "bulma/sass/components/card";
+@forward "bulma/sass/components/modal";
+@forward "bulma/sass/components/navbar";
+@forward "bulma/sass/components/breadcrumb";
+@forward "bulma/sass/components/card";
+@forward "bulma/sass/components/dropdown";
+@forward "bulma/sass/components/menu";
+@forward "bulma/sass/components/message";
+@forward "bulma/sass/components/modal";
+@forward "bulma/sass/components/pagination";
+@forward "bulma/sass/components/panel";
+@forward "bulma/sass/components/tabs";
+
+// Elements
+@forward "bulma/sass/elements/block";
+@forward "bulma/sass/elements/box";
+@forward "bulma/sass/elements/button";
+@forward "bulma/sass/elements/content";
+@forward "bulma/sass/elements/delete";
+@forward "bulma/sass/elements/icon";
+@forward "bulma/sass/elements/image";
+@forward "bulma/sass/elements/loader";
+@forward "bulma/sass/elements/notification";
+@forward "bulma/sass/elements/progress";
+@forward "bulma/sass/elements/table";
+@forward "bulma/sass/elements/tag";
+@forward "bulma/sass/elements/title";
+
+// Form
+@forward "bulma/sass/form/checkbox-radio";
+@forward "bulma/sass/form/file";
+@forward "bulma/sass/form/input-textarea";
+@forward "bulma/sass/form/select";
+@forward "bulma/sass/form/shared";
+@forward "bulma/sass/form/tools";
+
+// Grid
+@forward "bulma/sass/grid/columns";
+@forward "bulma/sass/grid/grid";
+
+// Helpers
+@forward "bulma/sass/helpers/aspect-ratio";
+@forward "bulma/sass/helpers/border";
+@forward "bulma/sass/helpers/color";
+@forward "bulma/sass/helpers/flexbox";
+@forward "bulma/sass/helpers/float";
+@forward "bulma/sass/helpers/gap";
+@forward "bulma/sass/helpers/other";
+@forward "bulma/sass/helpers/overflow";
+@forward "bulma/sass/helpers/position";
+@forward "bulma/sass/helpers/spacing";
+@forward "bulma/sass/helpers/typography";
+@forward "bulma/sass/helpers/visibility";
+
+
+// Layout
+@forward "bulma/sass/layout/container";
+@forward "bulma/sass/layout/footer";
+@forward "bulma/sass/layout/hero";
+@forward "bulma/sass/layout/level";
+@forward "bulma/sass/layout/media";
+@forward "bulma/sass/layout/section";
+
+
+// Import the themes so that all CSS variables have a value
+@forward "bulma/sass/themes";
+
+// Import the Google Font
+// @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+
+
+
+
+
+
+
+
+
 // add scss loop. increase transition by 10%
 
 .has-transition {
@@ -5,7 +105,7 @@
 }
 
 .has-transition:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
   transition: all 0.5s;
 }
 
@@ -38,16 +138,22 @@ img.is-grayscale-and-hover-color:hover {
   border-radius: var(--bulma-radius-rounded);
 }
 
-.has-ring-warning {
-  outline: solid;
-  outline-offset: .2rem;
-  outline-color: var(--bulma-warning)
-}
+// .has-ring-warning {
+//   outline: solid;
+//   outline-offset: .2rem;
+//   outline-color: var(--bulma-warning)
+// }
 
-.has-ring-dark {
+// .has-ring-dark {
+//   outline: solid;
+//   outline-offset: .2rem;
+//   outline-color: var(--bulma-dark)
+// }
+
+.has-ring-primary {
   outline: solid;
   outline-offset: .2rem;
-  outline-color: var(--bulma-dark)
+  outline-color: var(--bulma-primary)
 }
 
 
