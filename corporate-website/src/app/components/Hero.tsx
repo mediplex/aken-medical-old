@@ -1,5 +1,4 @@
 import { Navbar, Partners } from "@/components";
-import { Londrina_Solid } from "next/font/google";
 
 const benefits = [
   "Embedding of a variety of radioactive materials",
@@ -11,53 +10,85 @@ const benefits = [
 export const Hero = () => {
   return (
     // style={{ backgroundImage: `radial-gradient(circle, var(--bulma-white) 00%, var(--bulma-warning) 100%` }}
-    <header data-theme="dark" className="hero is-dark is-fullheight" >
-      <div className="hero-head">
+
+
+    <header data-theme="light" className="hero is-dark is-fullheight"
+    // style={{ backgroundImage: `linear-gradient(var(--bulma-warning) 00%, var(--bulma-white) 50%` }}
+    // style={{
+    //   backgroundImage: `url("/images/hero-bg.webp")`,
+    //   backgroundSize: "cover",
+    //   backgroundAttachment: "fixed",
+    //   backgroundOrigin:"border-box",
+    //   backgroundRepeat:"no-repeat",
+    // backgroundBlendMode: "multiply"
+    // }}
+    >
+
+      {/* <div className="hero-head">
         <Navbar />
-      </div>
-      <div className="hero-body">
+      </div> */}
+      {/* style={{backgroundColor:'#00000088'}} */}
+      <div className="hero-body" >
         <div className="container">
-          <div className="columns is-centered">
-            <div className="column is-8-desktop is-10-tablet">
-              <h1 className="title is-size-3-desktop is-size-3-tablet is-4  has-text-centered has-text-weight-bold" style={{ lineHeight: 1.3 }}>
-                Revolution in <span className="has-background-dark has-text-light">Radiopharmaceutical</span> Cancer Treatment with Nanoparticle Technology
-              </h1>
-            </div>
-          </div>
+
+
 
           <div className="columns is-centered">
-            <div className="column is-6-desktop">
-              <p className="has-text-centered">Our versatile nanoparticle platform is designed to embed radioactive materials enabling a seamless theranostics approach while delivering a concentrated radiation with an enhanced precision to the cancer cell.</p>
-            </div>
-          </div>
+            <div className="column is-6">
+              <div className="box">
+
+                <div className="columns is-centered">
+                  <div className="column is-8-desktop is-10-tablet">
+                    <h1 className="title has-text-centered has-text-pretty is-size-3-desktop is-size-3-tablet is-4   has-text-weight-bold" style={{ lineHeight: 1.3 }}>
 
 
-          <div className="columns is-centered my-6">
-            <div className="column is-4">
-              <div className="button has-text-weight-bold is-primary has-ring-primary is-rounded is-fullwidth py-5 ">Learn more!</div>
-              <a href="#" className="button is-ghost is-rounded has-text-centered is-fullwidth">Click on learn more to learn more</a>
-            </div>
-          </div>
+                      <div className="tag mb-4 ">Revolution in Cancer Treatment</div>
+                      <br />A Nanoparticle-based <span className="has-background-warning">Radiopharmaceutical</span>
 
-          <div className="columns is-centered ">
-            <div className="column is-4">
-
-              {
-                benefits.map((b, i) => (
-
-                  <div key={i} className="columns is-mobile is-centered is-vcentered is-2">
-                    <div className="column is-narrow ">
-                      <div style={{ height: 48, width: 48, borderWidth: 1, border: "solid", padding: 2, borderRadius: 999, display: 'flex', alignItems: "center", justifyContent: 'center' }}>{i + 1}</div>
-                    </div>
-                    <div className="column">
-                      <p key={i}>{b}</p>
-                    </div>
+                      {/* Revolution in Cancer Treatment <span className="has-background-dark has-text-light">Radiopharmaceutical</span> with Nanoparticle Technology */}
+                    </h1>
                   </div>
-                ))
-              }
+                </div>
 
+                <div className="columns is-centered">
+                  <div className="column is-6-desktop">
+                    <p className="has-text-pretty has-text-centered has-text-weight-normal">We develop a nanoparticle platform that embeds radioactive materials to deliver targeted radiation to cancer cells.</p>
+                  </div>
+                </div>
+                <div className="columns is-centered is-gapless  pt-6">
+                  <div className="column is-10 ">
+
+                    {
+                      benefits.map((b, i) => (
+
+                        <div key={i} className="columns is-mobile is-centered is-vcentered is-2">
+                          <div className="column is-narrow">
+                            <div style={{ height: 24, width: 24, backgroundColor: 'var(--bulma-dark)', color: 'var(--bulma-light)', outline: "solid", outlineOffset: 1, outlineColor: "var(--bulma-dark)", borderRadius: 999, display: 'flex', alignItems: "center", justifyContent: 'center' }}>{i + 1}</div>
+                          </div>
+                          <div className="column">
+                            <p key={i}>{b}</p>
+                          </div>
+                        </div>
+                      ))
+                    }
+
+                  </div>
+                </div>
+
+
+                <div className="columns is-centered my-6">
+                  <div className="column is-10">
+                    <div className="button has-text-weight-bold is-warning has-ring-warning is-rounded is-fullwidth py-5 ">Learn more!</div>
+                    <a href="#" className="button is-ghost is-rounded has-text-centered is-fullwidth">Click on learn more to learn more</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
+
+
+
 
 
 
@@ -73,5 +104,6 @@ export const Hero = () => {
         <Partners />
       </div>
     </header>
+
   );
 };

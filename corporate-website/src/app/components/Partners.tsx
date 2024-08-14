@@ -28,13 +28,14 @@ const partners = [
 
 export const Partners = () => {
     return (
-        <div className="section py-1 has-background-light">
+        <div className="section has-background-light">
+            <h2 className="title has-text-centered">Our Partners</h2>
             <div className="columns is-mobile is-multiline is-centered">
                 {
                     partners.map((p, i) => (
                         <div key={i} className="column is-narrow is-gapless">
                                 <Image
-                                    className='is-grayscale-and-hover-color has-transition'
+                                    className=' has-transition'
                                     src={p.imgSrc}
                                     alt={p.alt}
                                     height={72}

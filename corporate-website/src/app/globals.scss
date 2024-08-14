@@ -138,11 +138,11 @@ img.is-grayscale-and-hover-color:hover {
   border-radius: var(--bulma-radius-rounded);
 }
 
-// .has-ring-warning {
-//   outline: solid;
-//   outline-offset: .2rem;
-//   outline-color: var(--bulma-warning)
-// }
+.has-ring-warning {
+  outline: solid;
+  outline-offset: .2rem;
+  outline-color: var(--bulma-warning)
+}
 
 // .has-ring-dark {
 //   outline: solid;
@@ -150,8 +150,12 @@ img.is-grayscale-and-hover-color:hover {
 //   outline-color: var(--bulma-dark)
 // }
 
-.has-ring-primary {
-  outline: solid;
-  outline-offset: .2rem;
-  outline-color: var(--bulma-primary)
+// .has-ring-primary {
+//   outline: solid;
+//   outline-offset: .2rem;
+//   outline-color: var(--bulma-primary)
+// }
+
+.has-text-pretty {
+  text-wrap: balance;
 }
